@@ -255,19 +255,19 @@ img {
 }
 
 .features-item.icon-antenna::before {
-  background-image: url("../images/decor/antenna.svg");
+  background-image: url("../images/antenna.svg");
 }
 
 .features-item.icon-diagram::before {
-  background-image: url("../images/decor/diagram.svg");
+  background-image: url("../images/diagram.svg");
 }
 
 .features-item.icon-clock::before {
-  background-image: url("../images/decor/clock.svg");
+  background-image: url("../images/clock.svg");
 }
 
 .features-item.icon-astronaut::before {
-  background-image: url("../images/decor/astronaut.svg");
+  background-image: url("../images/astronaut.svg");
 }
 
 .features-title {
@@ -355,8 +355,30 @@ img {
   color: var(--secondery-text-color);
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.team-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--btnbgd-linkactive-color);
+  fill: var(--herobtntext-primbgd-color);
+}
+
 
 /* ------------------------Footer--------------------- */
 .footer {
@@ -428,39 +450,22 @@ margin-top: 0;
 margin-bottom: 20px;
 }
 
-.social-item {
-  display: inline-block;
+.footer-social-link {
+  display: flex;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  fill: var(--herobtntext-primbgd-color);
 }
 
-.social-item.instagramm {
-  background-image: url('../images/decor/instagram2.svg');
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--btnbgd-linkactive-color);
 }
 
-.social-item.twitter {
-  background-image: url('../images/decor/twitter1.svg');
-}
-
-.social-item.facebook {
-  background-image: url('../images/decor/facebook1.svg');
-}
-
-.social-item.linkedin {
-  background-image: url('../images/decor/linkedin1.svg');
-}
-
-.social-list {
-  display: flex;
-  gap: 10px;
-}
 
 /* -------------------------------------------------- */
 /* Portfolio.html */
