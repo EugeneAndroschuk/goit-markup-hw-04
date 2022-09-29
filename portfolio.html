@@ -28,23 +28,33 @@
             >Web<span class="header-logo">Studio</span></a
           >
           <ul class="list list-nav">
-            <li class="listnav-item"><a class="link header-nav" href="./index.html">Студія</a></li>
+            <li class="listnav-item">
+              <a class="link header-nav" href="./index.html">Студія</a>
+            </li>
             <li class="listnav-item">
               <a class="link header-nav active-nav" href="">Портфоліо</a>
             </li>
-            <li class="listnav-item"><a class="link header-nav" href="">Контакти</a></li>
+            <li class="listnav-item">
+              <a class="link header-nav" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="list list-contacts">
           <li class="listcontacts-item">
-            <a class="link header-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="link header-mail" href="mailto:info@devstudio.com">
+              <svg class="header-mail-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="listcontacts-item">
-            <a class="link header-tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="link header-tel" href="tel:+380961111111">
+              <svg class="header-tel-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -85,7 +95,7 @@
 
           <ul class="list product">
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product1.jpg"
                   alt="Сторінка"
@@ -99,7 +109,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product2.jpg"
                   alt="Баскетболісти"
@@ -107,13 +117,15 @@
                   height="294"
                 />
                 <div class="product-border">
-                  <h2 class="product-title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="product-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="product-text">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product3.jpg"
                   alt="Риба"
@@ -127,7 +139,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product4.jpg"
                   alt="Навушники"
@@ -141,7 +153,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product5.jpg"
                   alt="Дві коробки"
@@ -155,7 +167,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product6.jpg"
                   alt="Сторінка"
@@ -169,7 +181,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product7.jpg"
                   alt="Книга"
@@ -183,7 +195,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product8.jpg"
                   alt="Ярлик"
@@ -197,7 +209,7 @@
               </a>
             </li>
             <li class="product-item">
-              <a class="link" href="">
+              <a class="link product-link" href="">
                 <img
                   src="./images/portfolio/product9.jpg"
                   alt="Ноутбук"
@@ -216,33 +228,68 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a class="link logo" href="./index.html"
-          >Web<span class="footer-logo">Studio</span></a
-        >
-        <address>
-          <ul class="list">
+      <div class="container footer-blocks">
+        <div class="address">
+          <a class="link logo" href="./index.html"
+            >Web<span class="footer-logo">Studio</span></a
+          >
+          <address>
+            <ul class="list">
+              <li>
+                <a
+                  class="link footer-adress"
+                  href="https://goo.gl/maps/MHM2jNzYWEJxc3hFA"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="link footer-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link footer-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-links">
+          <h2 class="social">Приєднуйтесь</h2>
+          <ul class="list social-list">
             <li>
-              <a
-                class="link footer-adress"
-                href="https://goo.gl/maps/MHM2jNzYWEJxc3hFA"
-                target="_blank"
-                rel="noreferrer noopener"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+              <a class="footer-social-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="link footer-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="footer-social-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="link footer-tel" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+              <a class="footer-social-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
